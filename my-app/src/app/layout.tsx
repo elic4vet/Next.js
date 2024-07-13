@@ -1,13 +1,15 @@
 import "./globals.css";
-import Navbar from "../components/Navbar";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "../lib/utils";
- 
+import { ThemeProvider } from "@/components/theme-provider"
+import NavbarContainer from "@/components/navigation/NavbarContainer";
+
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
- 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,9 +24,17 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-  <Navbar />
-  {children}
-</body>
-    </html>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NavbarContainer />
+          {children}
+        </ThemeProvider>
+      </body>
+
+    </html >
   );
 }
