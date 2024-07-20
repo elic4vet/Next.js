@@ -26,7 +26,7 @@ export default function ItemCard({ image, title, description, tags, href }: Prop
                 {description}
                 </span>
 
-                <span className='flex justify-center items-center'>
+                <span className='flex justify-center items-center gap-2'>
                     {tags.map((tag, index) => (
                         <Badge
                             key={index + tag } variant="outline">
