@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
       <Section title="Projects" icon={<Folder />}>
-        <ItemCard image='/next.jpeg' title={"NextJs Portfolio"} description={"My portfolio with Next Js"} tags={["Nextjs","shadcn/ui","Tailwind","React"]} href={"/projects/portfolio"}/> 
+        <ItemCard image='/next.png' title={"NextJs Portfolio"} description={"My portfolio with NextJs"} tags={["Nextjs","shadcn/ui","Tailwind","React"]} href={"/projects/portfolio"}/>
+        <ItemCard image='/react.png' title={"React Portfolio"} description={"My portfolio with React"} tags={["React","Tailwind","React"]} href={"/projects/portfolio"}/>
       </Section>
     </main>
   );
