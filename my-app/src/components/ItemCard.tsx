@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import { Badge } from 'lucide-react';
-import Image from 'next/image'
- 
+import {Badge} from './ui/badge'
+import { ChevronRight } from 'react-feather'
+
 
 type Props = {
     image: string;
@@ -14,28 +14,30 @@ type Props = {
 
 export default function ItemCard({ image, title, description, tags, href }: Props) {
     return (
-        <Link className='flex justify-center items-center w-full h-full' href={href}>
-            <div className='flex flex-col justify-center items-center w-full h-full'>
-                <img src={image} alt={title} className=' h-16 w-16 object-cover rounded-lg'  />
+        <Link className='flex justify-center items-center w-full h-full flex-1 gap-4' href={href}>
+            <div className='flex flex-col justify-center items-center h-full'>
+                <img src={image} alt={title} className=' h-16 w-16 object-cover rounded-lg' />
             </div>
 
-            <div className='flex flex-col justify-center items-center w-full h-full gap-1 flex-1 '>
-                <h3 className='text-lg font-semibold'> {title} </h3>
-                <p className='flex justify-center items-center'>
-                <span> {description} </span>
-                </p>
+            <div className='flex flex-col justify-center items-center w-full h-full gap-2 flex-1'>
+                <span className='text-sm'> 
+                <span className='text-base font-semibold'>{title}</span>
+                {" - "}
+                {description}
+                </span>
 
-                <div className='flex justify-center items-center'>
-                    <span className='flex justify-center items-center gap-1'>
-                        {tags.map((tag, index) => (
-                            <Badge
-                                key={tag + index}
-                                className='text-xs font-semibold text-primary bg-secondary p-1 rounded-lg'>
-                                {tag}
-                            </Badge>
-                        ))}
-                    </span>
-                </div>
+                <span className='flex justify-center items-center'>
+                    {tags.map((tag, index) => (
+                        <Badge
+                            key={index + tag } variant="outline">
+                            {tag}
+                        </Badge>
+                    ))}
+                </span>
+            </div>
+
+            <div className='p-2 pr-4'>
+             <ChevronRight/>  
             </div>
         </Link>
     )
