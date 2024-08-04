@@ -14,22 +14,22 @@ type Props = {
 
 export default function ItemCard({ image, title, description, tags, href }: Props) {
     return (
-        <Link className='flex justify-center items-center w-full h-full flex-1 gap-4' href={href}>
+        <Link className='flex justify-center items-center w-full h-full flex-1 gap-4 mb-3' href={href}>
             <div className='flex flex-col justify-center items-center h-full'>
                 <img src={image} alt={title} className=' h-16 w-16 object-cover rounded-lg' />
             </div>
 
-            <div className='flex flex-col justify-center items-center w-full h-full gap-2 flex-1'>
+            <div className='flex flex-col justify-center items-center w-full h-full gap-4 flex-1'>
                 <span className='text-sm'> 
                 <span className='text-base font-semibold'>{title}</span>
                 {" - "}
                 {description}
                 </span>
 
-                <span className='flex justify-center items-center gap-2'>
+                <span className='flex justify-center items-center gap-2 opacity-60'>
                     {tags.map((tag, index) => (
                         <Badge
-                            key={index + tag } variant="outline">
+                            key={index + tag } className="z-10">
                             {tag}
                         </Badge>
                     ))}
