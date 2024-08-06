@@ -8,6 +8,10 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between mb-5">
 
+      <Section title="About Me" icon={<Briefcase />}>
+        <p className="text-center">I am a junior frontend developer with a passion for creating beautiful and functional user interfaces. I have experience in building responsive web applications with HTML, CSS, and JavaScript. I am currently learning React and NextJs to improve my skills and build more complex applications. I am looking for opportunities to work on exciting projects and collaborate with other developers.</p>
+      </Section>
+
       <Section title="Projects" icon={<Folder />}>
         <ItemCard image='/next.png' title={"NextJs Portfolio"} description={"My portfolio with NextJs"} tags={["Nextjs", "shadcn/ui", "Tailwind", "React"]} href={"/projects/portfolio"} />
         <ItemCard image='/react.png' title={"React Portfolio"} description={"My portfolio with React"} tags={["React", "Tailwind", "React"]} href={"/projects/portfolio"} />
