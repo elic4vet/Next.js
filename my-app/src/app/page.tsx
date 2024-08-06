@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between mb-5">
 
       <Section title="About Me" icon={<Briefcase />}>
-        <p className="text-center">I am a junior frontend developer with a passion for creating beautiful and functional user interfaces. I have experience in building responsive web applications with HTML, CSS, and JavaScript. I am currently learning React and NextJs to improve my skills and build more complex applications. I am looking for opportunities to work on exciting projects and collaborate with other developers.</p>
+        <p className="flex justify-between p-4">I am a junior frontend developer with a passion for creating beautiful and functional user interfaces. I have experience in building responsive web applications with HTML, CSS, and JavaScript. I am currently learning React and NextJs to improve my skills and build more complex applications. I am looking for opportunities to work on exciting projects and collaborate with other developers.</p>
       </Section>
 
       <Section title="Projects" icon={<Folder />}>
@@ -25,10 +25,10 @@ export default function Home() {
       </Section>
 
       <Section title="Education" icon={<Briefcase />} >
-        <ItemCard image='./iulogo.jpg' title={"IU - Internationale Hochschule"} description={"B.Sc. Computer Science "} tags={["Computer Science", "Bachelor" ,"Software Engineering"]} href={"/projects/portfolio"} />
-        <ItemCard image="./codefirstgirlslogo.png" title={"Introduction to Python & Apps"} description={"Python and app development workshop"} tags={["Python", "App Development" ,"Pandas", "Libraries"]} href={"/projects/portfolio"} />
+        <ItemCard image='./iulogo.jpg' title={"IU - Internationale Hochschule"} description={"B.Sc. Computer Science "} tags={["Computer Science", "Bachelor", "Software Engineering"]} href={"/projects/portfolio"} />
+        <ItemCard image="./codefirstgirlslogo.png" title={"Introduction to Python & Apps"} description={"Python and app development workshop"} tags={["Python", "App Development", "Pandas", "Libraries"]} href={"/projects/portfolio"} />
         <ItemCard image='./freecodecamplogo.png' title={"FreeCodeCamp"} description={"Responsive Web Design Certification"} tags={["HTML", "CSS", "JavaScript", "React", "TypeScript"]} href={"/projects/portfolio"} />
-        <ItemCard image="./shecodeslogo.png" title={"SheCodes"} description={"Frontend Development Workshop"} tags={["HTML", "CSS", "JavaScript", "React","Figma"]} href={"/projects/portfolio"} />
+        <ItemCard image="./shecodeslogo.png" title={"SheCodes"} description={"Frontend Development Workshop"} tags={["HTML", "CSS", "JavaScript", "React", "Figma"]} href={"/projects/portfolio"} />
         <ItemCard image="./udacitylogo.png" title={"Udacity"} description={'Nanodegree program : AI Product Manager'} tags={["AI", "Product Management", "Machine learning"]} href={"/projects/portfolio"} />
         <ItemCard image="./ekpalogo.jpg" title={"National and Kapodistrian University of Athens"} description={"B.Sc. French Language and Litterature"} tags={["French", "Language", "Litterature", "Bachelor Degree"]} href={"/projects/portfolio"} />
       </Section>
