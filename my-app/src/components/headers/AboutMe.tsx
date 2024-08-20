@@ -3,7 +3,7 @@ import React from 'react';
 import { Badge } from '../ui/badge';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { Mail } from 'react-feather';
+import { Mail, File} from 'react-feather';
 import Link from 'next/link';
 
 type Props = {
@@ -53,6 +53,7 @@ export default function AboutMe({ name, role, availability, location, image, ema
         {/* Resume and Email */}
         <Link href={resume} className='text-blue-500 underline text-sm' target='_blank' rel='noopener noreferrer'>
           <Button variant="outline">
+            <File size={18} />
             View Resume
           </Button>
         </Link>
