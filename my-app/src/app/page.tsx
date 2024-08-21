@@ -17,8 +17,8 @@ export default function Home() {
           image={'/me.png'}
           currentCompany={{
             name: 'Arvato SE',
-            role: 'Costumer service employee',
-            duration: 'since October 2016'
+            role: 'Costumer Service Employee',
+            duration: 'Since October 2016'
           }}
           resume={'https://docs.google.com/document/d/19mXeur9GGbbMddEzv2haSGYLkGMKSfH9/edit?usp=sharing&ouid=115227731188943947624&rtpof=true&sd=true'}
         />
