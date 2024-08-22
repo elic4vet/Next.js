@@ -47,7 +47,7 @@ const Navbar = () => {
                 {/* Toggle theme*/}
                 <ModeToggle />
                 {/* Hire me */}
-                <Link href="#home">
+                <Link href="https://www.linkedin.com/in/eerkekoglou/" target='_blank'>
                 <Button className='flex justify-center items-center gap-2' variant="outline" aria-label="Hire me" >
                  <FilePlus/>
                     Hire me
