@@ -32,7 +32,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Education */}
-                <Link href="#education" target='_blank'>
+                <Link href="#education">
                     <Button variant="ghost" size="icon" aria-label="Education">
                     <GraduationCap/>
                     </Button>
