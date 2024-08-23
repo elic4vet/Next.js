@@ -6,8 +6,8 @@ import AboutMe from '@/components/headers/AboutMe';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-12 gap-6">
-      <div className="flex flex-col items-center w-full max-w-5xl">
+    <main className="flex min-h-screen flex-col items-center justify-center p-12 gap-4">
+      <div className="p-2 rounded-xl bg-primary-foreground">
         <AboutMe
           name={'Elisabeth Erkekoglou'}
           role={'Junior Frontend Developer'}
