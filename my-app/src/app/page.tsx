@@ -60,8 +60,15 @@ export default function Home() {
         </div>
 
         <div id="contact">
+          <Section title="Contact" icon={<Star />}>
+            <div className="flex flex-col items-center justify-center gap-4">
+              <p>Feel free to contact me for any questions or opportunities</p>
+              <a href="mailto:elisabeth.erkekoglou@gmail.com" className=' bg-gradient-to-r from-rose-400 to-orange-300 lg-rounded'>elisabeth.erkekoglou@gmail.com </a>
+            </div>
+          </Section>
         </div>
+
       </div>
-    </main>
+    </main >
   );
 }
