@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background font-sans antialiased",
+          " bg-gradient-to-r from-rose-400 to-orange-300 font-sans antialiased",
           fontSans.variable
         )}
       >
