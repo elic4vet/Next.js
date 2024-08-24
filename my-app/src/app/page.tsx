@@ -23,10 +23,11 @@ export default function Home() {
           location={'Germany'}
           email={'elisabeth.erkekoglou@gmail.com'}
           image={'/me.png'}
+          
           currentCompany={{
             name: 'Arvato SE',
             role: 'Costumer Service Employee',
-            duration: 'Since October 2016'
+            duration: 'since October 2016'
           }}
           resume={'https://docs.google.com/document/d/19mXeur9GGbbMddEzv2haSGYLkGMKSfH9/edit?usp=sharing&ouid=115227731188943947624&rtpof=true&sd=true'}
         />
