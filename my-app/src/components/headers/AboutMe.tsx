@@ -41,9 +41,10 @@ export default function AboutMe({ name, role, availability, location, image, ema
       <div className='w-full flex flex-col md:flex-row justify-between items-center gap-6'>
         {/* Name, location, current company, and image */}
         <div className='flex flex-col justify-center items-start text-center md:text-left'>
+        <h1> About me </h1>
           <h1 className='text-3xl font-bold'>Hello, I&apos;m {name}</h1>
           <p className='text-sm'>{role} based in {location}</p>
-          <p className='text-sm'>Currently {currentCompany.role} @ {currentCompany.name} {currentCompany.duration}</p>
+          <p className='text-sm'>Currently working as a {currentCompany.role} @ {currentCompany.name} {currentCompany.duration}</p>
         </div>
 
         <img src={image} alt="me" className='w-20 h-20 rounded-full object-cover shadow-lg' />
