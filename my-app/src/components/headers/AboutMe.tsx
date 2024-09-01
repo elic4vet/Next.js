@@ -1,9 +1,9 @@
-import { CurrencyIcon, Globe } from 'lucide-react';
+import {Globe } from 'lucide-react';
 import React from 'react';
 import { Badge } from '../ui/badge';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { Mail, File} from 'react-feather';
+import { Mail, File } from 'react-feather';
 import Link from 'next/link';
 
 type Props = {
@@ -41,7 +41,8 @@ export default function AboutMe({ name, role, availability, location, image, ema
       <div className='w-full flex flex-col md:flex-row justify-between items-center gap-6'>
         {/* Name, location, current company, and image */}
         <div className='flex flex-col justify-center items-start text-center md:text-left'>
-        <h1> About me </h1>
+          <h1> About me </h1>
+
           <h1 className='text-3xl font-bold'>Hello, I&apos;m {name}</h1>
           <p className='text-sm'>{role} based in {location}</p>
           <p className='text-sm'>Currently working as a {currentCompany.role} @ {currentCompany.name} {currentCompany.duration}</p>
