@@ -3,15 +3,8 @@ import Section from '@/components/Sections';
 import ItemCard from '@/components/ItemCard';
 import { Briefcase, Folder, Star } from 'react-feather';
 import AboutMe from '@/components/headers/AboutMe';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
-import { GraduationCap, Sparkle } from 'lucide-react';
-import AboutMeContent from '@/components/headers/AboutMeContent';
-
+import { GraduationCap } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -33,7 +26,6 @@ export default function Home() {
           resume={'https://docs.google.com/document/d/19mXeur9GGbbMddEzv2haSGYLkGMKSfH9/edit?usp=sharing&ouid=115227731188943947624&rtpof=true&sd=true'}
         />
 
-        <AboutMeContent />
 
         <div id="projects">
           <Section title="Projects" icon={<Folder />}>
