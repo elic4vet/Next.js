@@ -18,10 +18,10 @@ const index = () => {
                     <Badge> Coding </Badge>
                     <Badge> Reading </Badge>
                     <Badge> Learning </Badge>
-                    <Badge> Listen to nice Music </Badge>
+                    <Badge> Listen to nice Music</Badge>
                     <br />
-                    <Badge> Drink coffee </Badge>
-                    <Badge> Travel </Badge>
+                    <Badge> Drink coffee</Badge>
+                    <Badge> Travel</Badge>
                     <Badge> Play with my Cat </Badge>
                     <Badge> Watch Movies </Badge>
                 </AccordionContent>
