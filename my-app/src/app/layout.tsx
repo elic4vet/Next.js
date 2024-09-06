@@ -4,7 +4,6 @@ import { cn } from "../lib/utils";
 import { ThemeProvider } from "@/components/theme-provider"
 import NavbarContainer from "@/components/navigation/NavbarContainer";
 
-
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -32,6 +31,7 @@ export default function RootLayout({
         >
           <NavbarContainer />
           {children}
+          
         </ThemeProvider>
       </body>
 
