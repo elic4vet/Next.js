@@ -26,6 +26,7 @@ export default function Home() {
           resume={'https://docs.google.com/document/d/19mXeur9GGbbMddEzv2haSGYLkGMKSfH9/edit?usp=sharing&ouid=115227731188943947624&rtpof=true&sd=true'}
         />
 
+        <Link href="/Aboutme">Learn more about me</Link>
 
         <div id="projects">
           <Section title="Projects" icon={<Folder />}>
