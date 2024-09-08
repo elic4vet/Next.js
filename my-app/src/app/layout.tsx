@@ -1,8 +1,9 @@
 import "./globals.css";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans} from 'next/font/google';
 import { cn } from "../lib/utils";
 import { ThemeProvider } from "@/components/theme-provider"
 import NavbarContainer from "@/components/navigation/NavbarContainer";
+
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -19,8 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          " bg-gradient-to-r from-rose-400 to-orange-300 font-sans antialiased",
-          fontSans.variable
+          "bg-gradient-to-r from-rose-400 to-orange-300 antialiased",  // Tailwind classes
+          fontSans.variable 
         )}
       >
         <ThemeProvider
@@ -29,10 +30,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          
           <NavbarContainer />
           {children}
-          
         </ThemeProvider>
       </body>
 
