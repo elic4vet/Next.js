@@ -23,7 +23,7 @@ export default function Home() {
             role: 'Costumer Service Employee',
             duration: 'since October 2016'
           }}
-          resume={'https://docs.google.com/document/d/19mXeur9GGbbMddEzv2haSGYLkGMKSfH9/edit?usp=sharing&ouid=115227731188943947624&rtpof=true&sd=true'}
+          resume={'https://drive.google.com/file/d/1ya2c8BcWsFr_myV8sRWDX9IRf1nlyAdB/view?usp=sharing'}
         />
 
 
