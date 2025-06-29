@@ -3,13 +3,14 @@ import Section from '@/components/Sections';
 import ItemCard from '@/components/ItemCard';
 import { Briefcase, Folder, Star } from 'react-feather';
 import AboutMe from '@/components/headers/AboutMe';
+
 import { GraduationCap } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center p-8 gap-4">
-      <div className="p-2 rounded-xl bg-primary-foreground">
+    <main className="w-full max-w-lg flex flex-col items-center justify-center gap-4 mx-auto mt-4 ">
+      <div className="w-full flex flex-col gap-6 p-4 rounded-xl bg-primary-foreground shadow">
         <AboutMe
           name={'Elisabeth Erkekoglou'}
           role={'Junior Frontend Developer'}
@@ -29,17 +30,45 @@ export default function Home() {
 
         <div id="projects">
           <Section title="Projects" icon={<Folder />}>
-            <ItemCard image='/next.png' title={"NextJs Portfolio"} description={"My portfolio with NextJs"} tags={["Nextjs", "shadcn/ui", "Tailwind", "React"]} href={"/projects/portfolio"} />
-            <ItemCard image='/react.png' title={"React Portfolio"} description={"My portfolio with React"} tags={["React", "Tailwind", "React"]} href={"/projects/portfolio"} />
-            <ItemCard image='/Vue.png' title={"Vue App"} description={"An app built with Vue"} tags={["Vue", "Tailwind", "Vue"]} href={"/projects/portfolio"} />
-            <ItemCard image='/Angular.png' title={"Angular App"} description={"An app built with Angular"} tags={["Angular", "Tailwind", "Angular"]} href={"/projects/portfolio "} />
+            <ItemCard
+              image='/next.png'
+              title={"NextJs Portfolio"}
+              description={"My portfolio with NextJs"}
+              tags={["Nextjs", "shadcn/ui", "Tailwind", "React"]}
+              href={"/projects/portfolio"}
+            />
+
+
+            <ItemCard
+              image='/react.png'
+              title={"React Portfolio"}
+              description={"My portfolio with React"}
+              tags={["React", "Tailwind", "React"]}
+              href={"/projects/portfolio"}
+            />
+
+            <ItemCard
+              image='/vue.png'
+              title={"Vue App"}
+              description={"An app built with Vue"}
+              tags={["Vue", "Tailwind", "Vue"]}
+              href={"/projects/portfolio"}
+            />
+
+            <ItemCard
+              image='/angular.png'
+              title={"Angular App"}
+              description={"An app built with Angular"}
+              tags={["Angular", "Tailwind", "Angular"]}
+              href={"/projects/portfolio"}
+            />
           </Section>
         </div>
 
 
         <div id="experience">
           <Section title="Experience" icon={<Briefcase />}>
-            <ItemCard image='./kreativstorm.png' title={"Kreativstorm"} description={"Junior Frontend Developer training internship"} tags={["HTML", "CSS", "JavaScript", "Rensponsive web design"]} href={"/projects/portfolio"} />
+            <ItemCard image='./kreativstorm.png' title={"Kreativstorm"} description={"Junior Frontend Developer training internship"} tags={["HTML", "CSS", "JavaScript", "Responsive web design"]} href={"/projects/portfolio"} />
             <ItemCard image='./arvato.jpg' title={"Arvato SE"} description={"Costumer service employee"} tags={["CRM", "SAP S/4HANA", "Logistics", "Healthcare"]} href={"/projects/portfolio"} />
           </Section>
         </div>
