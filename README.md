@@ -3,8 +3,8 @@
  [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://eerkekoglou24.netlify.app/) 
 
 ## Features  
-- Dark/light mode toggle  
-- Responsive design (mobile-first)  
+- 📱 Responsive design(mobile-first) 
+- 🌙 Dark/light mode toggle   
 - TypeScript for type safety  
 
 ## Projects Showcase  
