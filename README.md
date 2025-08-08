@@ -1,6 +1,6 @@
 # Next.js Portfolio  
 **A minimalist, responsive portfolio built with Next.js, TypeScript, and Shadcn/UI.**  
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green)]([[https://your-vercel-link.vercel.app](https://eerkekoglou24.netlify.app/)](https://eerkekoglou24.netlify.app/))  
+ [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://eerkekoglou24.netlify.app/) 
 
 ## Features  
 - Dark/light mode toggle  
