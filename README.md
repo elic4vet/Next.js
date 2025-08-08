@@ -10,8 +10,8 @@
 ## Projects Showcase  
 | Project       | Tech Stack      | Live Demo |  
 |--------------|----------------|-----------|  
-| DevFinder    | React, GitHub API | [Link]((https://elic4vet.github.io/devfinder/)) |  
-| Diary App    | Django, Python | [Link]((https://github.com/elic4vet/my-diary)) |  
+| DevFinder    | React, GitHub API | [Link](https://elic4vet.github.io/devfinder/) |  
+| Diary App    | Django, Python | [Link](https://github.com/elic4vet/my-diary) |  
 
 ## Run Locally  
 ```bash  
